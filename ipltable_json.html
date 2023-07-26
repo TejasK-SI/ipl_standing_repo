@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="ipl_styles.css">
+
+</head>
+<body>
+
+    <div class="ipl_table">
+        <img id="ipl_logo" src="ipl_logo.png" alt="">
+        <h1>
+            IPL Final Standings
+        </h1>
+        <h3>31st March to 28th May 2023</h3>
+    <div class="tablebg">
+    <table cellspacing="0">
+        <tr>
+            <th>Team</th>
+            <th>M</th>
+            <th>W</th>
+            <th>L</th>
+            <th>NRR</th>
+            <th>Pts</th>
+            <th>Last 5</th>
+        </tr>
+        <tbody id="myTable">
+
+        </tbody>
+    </table>
+
+</body>
+
+<script>
+	var myArray = [
+    {
+      "team": "1  GT",
+      "m": "14",
+      "w": "10",
+      "l": "4",
+      "nrr": "+0.809",
+      "pts": "20",
+      "last_5": ""
+    },
+    {
+      "team": "2  CSK",
+      "m": "14",
+      "w": "8",
+      "l": "5",
+      "nrr": "+0.652",
+      "pts": "17",
+      "last_5": "    "
+    },
+    {
+      "team": "3  LSG",
+      "m": "14",
+      "w": "8",
+      "l": "5",
+      "nrr": "+0.284",
+      "pts": "17",
+      "last_5": "    "
+    },
+    {
+      "team": "4  MI",
+      "m": "14",
+      "w": "8",
+      "l": "6",
+      "nrr": "-0.044",
+      "pts": "16",
+      "last_5": "    "
+    },
+    {
+      "team": "5  RR",
+      "m": "14",
+      "w": "7",
+      "l": "7",
+      "nrr": "+0.148",
+      "pts": "14",
+      "last_5": ""
+    },
+    {
+      "team": "6  RCB",
+      "m": "14",
+      "w": "7",
+      "l": "7",
+      "nrr": "+0.135",
+      "pts": "14",
+      "last_5": "    "
+    },
+    {
+      "team": "7  KKR",
+      "m": "14",
+      "w": "6",
+      "l": "8",
+      "nrr": "-0.239",
+      "pts": "12",
+      "last_5": "    "
+    },
+    {
+      "team": "8  PBKS",
+      "m": "14",
+      "w": "6",
+      "l": "8",
+      "nrr": "-0.304",
+      "pts": "12",
+      "last_5": "    "
+    },
+    {
+      "team": "9  DC",
+      "m": "14",
+      "w": "5",
+      "l": "9",
+      "nrr": "-0.808",
+      "pts": "10",
+      "last_5": "    "
+    },
+    {
+      "team": "10 SRH",
+      "m": "14",
+      "w": "4",
+      "l": "10",
+      "nrr": "-0.590",
+      "pts": "8",
+      "last_5": ""
+    }
+  ]
+	
+	buildTable(myArray)
+
+
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i < data.length; i++){
+			var row = `<tr>
+                
+							<td>${data[i].team}</td>
+							<td>${data[i].m}</td>
+							<td>${data[i].w}</td>
+                            <td>${data[i].l}</td>
+							<td>${data[i].nrr}</td>
+							<td>${data[i].pts}</td>
+                            <td>${data[i].last_5}</td>
+                            
+					  </tr>`
+			table.innerHTML += row
+
+
+		}
+	}
+
+</script>
+</html>

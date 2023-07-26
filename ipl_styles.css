@@ -1,0 +1,118 @@
+body{
+    background: linear-gradient(to bottom, rgb(193, 220, 250), rgb(6, 107, 240));
+    background-attachment: fixed;
+}
+
+
+
+#ipl_logo{
+    position: absolute;
+    width: 10%;
+}
+
+.ipl_table h1, h3{
+    text-align: center;
+    
+}
+
+.ipl_table h1{
+    font-size: 50px;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+}
+
+.ipl_table h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ipl_table table{
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    border: 0.5px solid;
+    left: 14%;
+    top:20%;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: center;
+    margin: 2%;
+    padding-bottom: 0%;
+    border-radius: 20px;
+    background-image: url(stadium.jpg); 
+    background-color: rgba(255, 255, 255, 0.459);
+    overflow: hidden;
+    box-shadow: 5px 10px;
+}
+
+
+
+.ipl_table th:nth-child(1){
+    width: 45%;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.ipl_table th:nth-child(7){
+    width: 150px;
+}
+
+.ipl_table td:nth-child(7){
+    background-color: rgba(245, 245, 220, 0.664);
+}
+
+.ipl_table td:first-child{
+    text-align: left;
+    padding-left: 2%;
+}
+
+.ipl_table th, tr, td{
+    padding: 1% 1%;   
+
+    border: none !important; 
+}
+
+.ipl_table tr td{
+    padding: 2px 5px;    
+    border: none;
+}
+
+.ipl_table th{
+    padding-bottom: 1%;
+    border: none;
+    background-color: rgba(104, 104, 255, 0.815);
+}
+
+.ipl_table tr:nth-child(even){
+    background-color: rgba(86, 146, 146, 0.747);
+    color: aliceblue;
+}
+
+.ipl_table tr:nth-child(odd){
+    background-color: rgba(79, 166, 238, 0.747);
+}
+
+.ipl_table table .team_logo{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    vertical-align:middle;
+}
+
+footer h2{
+    position: absolute;
+    bottom: 0%;
+    right: 15%;
+    padding-bottom: 2%;
+}
+
+footer img{
+    position: absolute;
+    bottom: 0%;
+    right: 7%;
+    padding-bottom: 2%;
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
